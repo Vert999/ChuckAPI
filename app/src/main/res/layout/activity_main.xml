@@ -8,26 +8,35 @@
 
     <TextView
         android:id="@+id/jokeView"
-        android:layout_width="385dp"
-        android:layout_height="260dp"
-        android:text="Hello World!"
+        android:layout_width="379dp"
+        android:layout_height="45dp"
+        android:text="Howdy! Click to Get a meme!"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.879" />
 
     <Button
         android:id="@+id/newJoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Joke"
+        android:text="New Meme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/jokeView"
         app:layout_constraintStart_toStartOf="@+id/jokeView"
         app:layout_constraintTop_toBottomOf="@+id/jokeView" />
+
+    <ImageView
+        android:id="@+id/jokeImg"
+        android:layout_width="384dp"
+        android:layout_height="573dp"
+        app:layout_constraintBottom_toTopOf="@+id/jokeView"
+        app:layout_constraintEnd_toEndOf="@+id/jokeView"
+        app:layout_constraintStart_toStartOf="@+id/jokeView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
